@@ -1,0 +1,13 @@
+Source: Email attachment transcribed to text
+From: billing@papertrail-office.example
+Subject: supplies invoice - please process
+Vendor: PaperTrail Office Supplies
+INVOICE PT-8841 | issued Oct 3, 2026
+Deliver to: Juniper Design, floor 2
+Paper cartons 10 x $42 = $420; toner 3 x $85 = $255
+Subtotal $675.00 + tax $54.00 = TOTAL USD 729.00
+Due: 2026-11-02
+Purchase order: [blank]
+Payment: net 30, ACH account on file ending 2210
+Email text: Your team ordered by phone. I don't have the PO; ask Mike?
+Packing slip says received Oct 4 but receiving signature is illegible.

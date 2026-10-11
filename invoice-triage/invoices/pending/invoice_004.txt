@@ -1,0 +1,18 @@
+Source: Forwarded email chain with scanned invoice OCR
+From: lena@juniper.example
+Subject: Fwd: Re: invoice / site repair
+Email text: AP - I think this is the final copy? Sam said this might already be in the queue.
+--- Forwarded, Oct 8 ---
+From: service@brightfix.example
+Vendor: BrightFix Maintenance
+Invoice no: BF-10O8 (OCR: last digits might be 1008, letter O or zero?)
+PO: PO-2026-1080
+Emergency door repair + parts
+Labor USD 460; parts USD 320; invoice total USD 780.00
+Due date: 2026-10-25
+Payment: check to BrightFix Maintenance, address on vendor file.
+--- Earlier reply, Oct 6 ---
+Sam: quote was $680; please revise to include the extra part.
+Lena: saw BF-1008 in the payment spreadsheet but not sure whether paid.
+--- OCR footer ---
+TOTAL 780.00 / thank you / scan ends

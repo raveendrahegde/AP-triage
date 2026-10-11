@@ -1,0 +1,24 @@
+{
+  "vendor": "Apex Strategic Partners (legal name incomplete)",
+  "invoice_number": "ASP-77?? (incomplete)",
+  "amount": 48900,
+  "due_date": "",
+  "confidence": 68,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "USD 48,900 is far above the stated USD 4,000 retainer and demo review threshold.",
+    "Scope, invoice number, purchase order and due date are unclear.",
+    "Payment instructions and engagement authorization are absent."
+  ],
+  "missing_information": [
+    "Complete legal vendor name",
+    "Complete invoice number",
+    "Purchase order",
+    "Unambiguous due date",
+    "Itemized scope and authorization",
+    "Verified payment instructions"
+  ],
+  "human_question": "Who can confirm the scope, authorized total, vendor identity and PO for this engagement?",
+  "_mode": "Mock demo",
+  "_text_hash": "c445c5bc179f949801eac38e61aa02c777725bac369ec6c387ff50d8eb4306bd"
+}

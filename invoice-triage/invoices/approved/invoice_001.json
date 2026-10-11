@@ -1,0 +1,16 @@
+{
+  "vendor": "CloudHarbor Software LLC",
+  "invoice_number": "CH-2026-1001",
+  "amount": 1200,
+  "due_date": "2026-10-31",
+  "confidence": 97,
+  "recommendation": "NORMAL",
+  "reasons": [
+    "Recurring monthly total matches the stated prior month.",
+    "PO, due date, vendor and invoice number are present; no payment change requested."
+  ],
+  "missing_information": [],
+  "human_question": "Has the subscription been received and matched to the PO?",
+  "_mode": "Mock demo",
+  "_text_hash": "7ec1c5cee7928a9ce4e18cfc6bcae0d91998149a202c172254a882536aa069dc"
+}

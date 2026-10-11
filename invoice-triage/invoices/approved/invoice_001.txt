@@ -1,0 +1,12 @@
+Source: Vendor portal export
+Vendor: CloudHarbor Software LLC
+Invoice number: CH-2026-1001
+Invoice date: 2026-10-01
+Due date: 2026-10-31
+Bill to: Juniper Design Co., Accounts Payable
+PO: PO-2026-1042
+Description: October team workspace subscription, 25 seats x USD 48
+Subtotal: USD 1,200.00; Tax: USD 0.00; Total due: USD 1,200.00
+Payment: ACH to existing vendor master account ending 4402; no changes requested.
+Portal note: monthly recurring charge; September invoice also USD 1,200.
+Email text: Hi AP, October invoice is ready. Thanks, CloudHarbor billing.

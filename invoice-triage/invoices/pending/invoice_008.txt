@@ -1,0 +1,13 @@
+Source: Scanned invoice OCR attached to email
+Vendor: Summit Equipment Rentals
+Invoice number: SER-6012
+Due date: 2026-10-29
+PO: PO-2026-1132
+Description: Lift rental, 3 days
+Rental: 3 x USD 300.00 = USD 900.00
+Delivery USD 150.00
+Tax USD 84.00
+TOTAL DUE: USD 1,314.00 [OCR clear]
+Payment: check to registered vendor address.
+Email text: Attached is your final rental invoice. No other charges listed.
+Note: itemized amounts total USD 1,134.00, which differs from the printed total.

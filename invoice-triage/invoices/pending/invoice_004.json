@@ -1,0 +1,21 @@
+{
+  "vendor": "BrightFix Maintenance",
+  "invoice_number": "BF-10O8 / BF-1008 (ambiguous)",
+  "amount": 780,
+  "due_date": "2026-10-25",
+  "confidence": 76,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "OCR makes the invoice number ambiguous (letter O versus zero).",
+    "Email suggests a possible duplicate; prior payment is not verified.",
+    "Earlier quote differs from final total; confirm revision."
+  ],
+  "missing_information": [
+    "Confirmed invoice number",
+    "Prior payment/duplicate check",
+    "Confirmed revised amount"
+  ],
+  "human_question": "Is this BF-1008 already queued or paid, and is USD 780 the authorized final total?",
+  "_mode": "Mock demo",
+  "_text_hash": "f911b0b6c023000baf945a350a89338a5025b24a91fc54c56425954bed39e3d7"
+}

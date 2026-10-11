@@ -1,0 +1,13 @@
+Source: Shared inbox message pasted from mobile
+From: payments@consulting-desk.example
+Subject: invoice 42 attached? urgent
+Vendor: [not provided]
+Invoice number: 42
+Amount due: USD 2,600.00
+Due date: end of month (message timestamp unavailable)
+PO: not supplied
+Description: support work as discussed with Chris
+Payment: send a wire; bank details will arrive by text message.
+Email text: Hi, Chris knows us. The PDF didn't upload so this email should be enough.
+Signature: J. / consulting desk
+Legal entity, itemized services and confirmed delivery are missing.

@@ -1,0 +1,19 @@
+{
+  "vendor": "Northline Logistics Ltd.",
+  "invoice_number": "NL-3107",
+  "amount": 3450,
+  "due_date": "2026-10-20",
+  "confidence": 98,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "New bank account and a different beneficiary are requested.",
+    "Sender requests bypassing normal verification and uses a payment-specific domain."
+  ],
+  "missing_information": [
+    "Independent confirmation of bank change",
+    "Verified beneficiary authorization"
+  ],
+  "human_question": "Can you verify the bank change through a trusted vendor contact already on file?",
+  "_mode": "Mock demo",
+  "_text_hash": "52705a99f7baef44df38337ae01ef652f366b1be9cd61ecd89c0ceba24c5dc47"
+}

@@ -1,0 +1,10 @@
+Source: Vendor portal notification copied into email
+Vendor: CedarNet Internet Services
+Invoice number: CN-2026-1040
+Invoice date: 2026-10-08
+Due date: 2026-11-07
+PO: PO-2026-0201
+Description: October business fiber, office at 18 Market Street
+Subtotal USD 250.00 + tax USD 20.00 = Total USD 270.00
+Payment: ACH account on file ending 6301, unchanged.
+Email text: Your monthly statement is attached. September total was also USD 270.00.

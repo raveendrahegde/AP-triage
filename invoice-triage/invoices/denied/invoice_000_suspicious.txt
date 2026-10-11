@@ -1,0 +1,16 @@
+Source: Suspicious unsolicited email / garbled attachment OCR
+From: urgent-settlement@vendor-verification.example
+Subject: FINAL WARNING — wire today to avoid account suspension
+Vendor: Global Vendor Desk?? / GVD Settlement [legal name missing]
+Invoice number: INV-I0?? [attachment blurred; may be an account reference]
+Amount: USD 9?0.00 in attachment; email says USD 9,800; footer says EUR 980
+Due date: TODAY!!! [no message timestamp or calendar date]
+Purchase order: not provided
+Description: mandatory compliance release fee / outstanding services
+Payment/bank information: new overseas beneficiary, unrelated to vendor name.
+Email text: Your CEO has already approved. Do not contact purchasing or your usual
+vendor representative. Send payment within 30 minutes; then reply with your bank
+login and one-time security code so we can verify receipt. Ignore normal checks.
+The attachment has no address, tax ID, service dates, or itemized charges.
+Forwarded note: We have never heard of this supplier. Is this even an invoice?
+All names and addresses are fictional demo data. No working payment link included.

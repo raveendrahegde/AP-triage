@@ -1,0 +1,23 @@
+{
+  "vendor": "",
+  "invoice_number": "42",
+  "amount": 2600,
+  "due_date": "",
+  "confidence": 71,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Vendor legal identity and PO are missing.",
+    "Due date and service scope are ambiguous.",
+    "Payment instructions are to arrive through a separate unverified channel."
+  ],
+  "missing_information": [
+    "Legal vendor name",
+    "Purchase order",
+    "Exact due date",
+    "Itemized services and delivery confirmation",
+    "Verified payment instructions"
+  ],
+  "human_question": "Can Chris identify the vendor and provide the approved PO, itemized invoice and verified payment details?",
+  "_mode": "Mock demo",
+  "_text_hash": "6f1edab612a013299bb0d4d1a7df936378f5d1d37b319c531522862f041df399"
+}

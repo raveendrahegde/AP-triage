@@ -1,0 +1,19 @@
+{
+  "vendor": "PaperTrail Office Supplies",
+  "invoice_number": "PT-8841",
+  "amount": 729,
+  "due_date": "2026-11-02",
+  "confidence": 94,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Purchase order is missing.",
+    "Receipt signature is illegible and the email does not establish authorization."
+  ],
+  "missing_information": [
+    "Purchase order number",
+    "Confirmed receiving and order authorization"
+  ],
+  "human_question": "Which approved PO covers this order, and can receiving confirm delivery?",
+  "_mode": "Mock demo",
+  "_text_hash": "38daae2adcdab7ceac7e9c4fc17e5aa118e4ed2ef0a8bc561bcb68487b5b75fb"
+}

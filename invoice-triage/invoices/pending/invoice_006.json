@@ -1,0 +1,16 @@
+{
+  "vendor": "CedarNet Internet Services",
+  "invoice_number": "CN-2026-1040",
+  "amount": 270,
+  "due_date": "2026-11-07",
+  "confidence": 97,
+  "recommendation": "NORMAL",
+  "reasons": [
+    "Monthly total matches the stated previous bill.",
+    "Invoice number, PO and due date are clear; payment details are unchanged."
+  ],
+  "missing_information": [],
+  "human_question": "Can you confirm the service period and match the invoice to the PO?",
+  "_mode": "Mock demo",
+  "_text_hash": "f9ce9b7c59e57af9750b6343fd5235c9e20d4a8c7822a6e56f3e78133efa5db4"
+}

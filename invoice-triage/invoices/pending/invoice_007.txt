@@ -1,0 +1,13 @@
+Source: Forwarded payment reminder
+From: ar@pixelpress.example
+Vendor: PixelPress Studio LLC
+Invoice number: PP-2209
+Due date: 2026-10-16
+PO: PO-2026-0814
+Description: September brochure design, 12 hours x USD 150
+Total due USD 1,800.00
+Payment: existing ACH account ending 7081.
+Email text: Second reminder, please pay today.
+--- forwarded internal note ---
+Alex: PP-2209 is marked paid on October 2 in my spreadsheet. Is this a duplicate?
+Rae: Could be a stale reminder. I haven't checked the bank payment reference.

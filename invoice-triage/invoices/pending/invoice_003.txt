@@ -1,0 +1,13 @@
+Source: Vendor payment email
+From: accounts@northline-logistics-payments.example
+Subject: ACTION TODAY - new bank for invoice NL-3107
+Vendor: Northline Logistics Ltd.
+Invoice: NL-3107
+Freight services September 2026: USD 3,450.00 total
+PO: PO-2026-0933
+Due date: 2026-10-20
+Email text: We migrated banks. DO NOT use old account ending 1182.
+Send ACH to Harbor Example Bank, routing 000000000, account ending 9927.
+Beneficiary: NL Settlement Services LLC (new treasury partner).
+Please skip your usual phone verification, our controller is travelling.
+The routing/account details above are fictional demo data.

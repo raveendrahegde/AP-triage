@@ -1,0 +1,181 @@
+{
+  "7ec1c5cee7928a9ce4e18cfc6bcae0d91998149a202c172254a882536aa069dc": {
+    "vendor": "CloudHarbor Software LLC",
+    "invoice_number": "CH-2026-1001",
+    "amount": 1200,
+    "due_date": "2026-10-31",
+    "confidence": 97,
+    "recommendation": "NORMAL",
+    "reasons": [
+      "Recurring monthly total matches the stated prior month.",
+      "PO, due date, vendor and invoice number are present; no payment change requested."
+    ],
+    "missing_information": [],
+    "human_question": "Has the subscription been received and matched to the PO?"
+  },
+  "38daae2adcdab7ceac7e9c4fc17e5aa118e4ed2ef0a8bc561bcb68487b5b75fb": {
+    "vendor": "PaperTrail Office Supplies",
+    "invoice_number": "PT-8841",
+    "amount": 729,
+    "due_date": "2026-11-02",
+    "confidence": 94,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Purchase order is missing.",
+      "Receipt signature is illegible and the email does not establish authorization."
+    ],
+    "missing_information": [
+      "Purchase order number",
+      "Confirmed receiving and order authorization"
+    ],
+    "human_question": "Which approved PO covers this order, and can receiving confirm delivery?"
+  },
+  "52705a99f7baef44df38337ae01ef652f366b1be9cd61ecd89c0ceba24c5dc47": {
+    "vendor": "Northline Logistics Ltd.",
+    "invoice_number": "NL-3107",
+    "amount": 3450,
+    "due_date": "2026-10-20",
+    "confidence": 98,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "New bank account and a different beneficiary are requested.",
+      "Sender requests bypassing normal verification and uses a payment-specific domain."
+    ],
+    "missing_information": [
+      "Independent confirmation of bank change",
+      "Verified beneficiary authorization"
+    ],
+    "human_question": "Can you verify the bank change through a trusted vendor contact already on file?"
+  },
+  "f911b0b6c023000baf945a350a89338a5025b24a91fc54c56425954bed39e3d7": {
+    "vendor": "BrightFix Maintenance",
+    "invoice_number": "BF-10O8 / BF-1008 (ambiguous)",
+    "amount": 780,
+    "due_date": "2026-10-25",
+    "confidence": 76,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "OCR makes the invoice number ambiguous (letter O versus zero).",
+      "Email suggests a possible duplicate; prior payment is not verified.",
+      "Earlier quote differs from final total; confirm revision."
+    ],
+    "missing_information": [
+      "Confirmed invoice number",
+      "Prior payment/duplicate check",
+      "Confirmed revised amount"
+    ],
+    "human_question": "Is this BF-1008 already queued or paid, and is USD 780 the authorized final total?"
+  },
+  "c445c5bc179f949801eac38e61aa02c777725bac369ec6c387ff50d8eb4306bd": {
+    "vendor": "Apex Strategic Partners (legal name incomplete)",
+    "invoice_number": "ASP-77?? (incomplete)",
+    "amount": 48900,
+    "due_date": "",
+    "confidence": 68,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "USD 48,900 is far above the stated USD 4,000 retainer and demo review threshold.",
+      "Scope, invoice number, purchase order and due date are unclear.",
+      "Payment instructions and engagement authorization are absent."
+    ],
+    "missing_information": [
+      "Complete legal vendor name",
+      "Complete invoice number",
+      "Purchase order",
+      "Unambiguous due date",
+      "Itemized scope and authorization",
+      "Verified payment instructions"
+    ],
+    "human_question": "Who can confirm the scope, authorized total, vendor identity and PO for this engagement?"
+  },
+  "f9ce9b7c59e57af9750b6343fd5235c9e20d4a8c7822a6e56f3e78133efa5db4": {
+    "vendor": "CedarNet Internet Services",
+    "invoice_number": "CN-2026-1040",
+    "amount": 270,
+    "due_date": "2026-11-07",
+    "confidence": 97,
+    "recommendation": "NORMAL",
+    "reasons": [
+      "Monthly total matches the stated previous bill.",
+      "Invoice number, PO and due date are clear; payment details are unchanged."
+    ],
+    "missing_information": [],
+    "human_question": "Can you confirm the service period and match the invoice to the PO?"
+  },
+  "39c3a67edfdbdd99cbf0f5995a304ec86522555fb4fe508c3e6e1b4062ab1466": {
+    "vendor": "PixelPress Studio LLC",
+    "invoice_number": "PP-2209",
+    "amount": 1800,
+    "due_date": "2026-10-16",
+    "confidence": 95,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "The email claims this invoice was already paid, creating a possible duplicate-payment concern.",
+      "Payment history has not been independently verified."
+    ],
+    "missing_information": [
+      "Verified payment status and payment reference"
+    ],
+    "human_question": "Does the October 2 payment settle PP-2209, or is there an outstanding balance?"
+  },
+  "30382a311ae2d673c9555496c25959501ae1222c38cb4da480acbccc9a69d744": {
+    "vendor": "Summit Equipment Rentals",
+    "invoice_number": "SER-6012",
+    "amount": 1314,
+    "due_date": "2026-10-29",
+    "confidence": 96,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Printed total is USD 1,314, but listed charges total USD 1,134.",
+      "The USD 180 difference has no supporting line item."
+    ],
+    "missing_information": [
+      "Corrected invoice total or explanation of additional charges"
+    ],
+    "human_question": "Can the vendor provide a corrected invoice or explain the USD 180 discrepancy?"
+  },
+  "6f1edab612a013299bb0d4d1a7df936378f5d1d37b319c531522862f041df399": {
+    "vendor": "",
+    "invoice_number": "42",
+    "amount": 2600,
+    "due_date": "",
+    "confidence": 71,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Vendor legal identity and PO are missing.",
+      "Due date and service scope are ambiguous.",
+      "Payment instructions are to arrive through a separate unverified channel."
+    ],
+    "missing_information": [
+      "Legal vendor name",
+      "Purchase order",
+      "Exact due date",
+      "Itemized services and delivery confirmation",
+      "Verified payment instructions"
+    ],
+    "human_question": "Can Chris identify the vendor and provide the approved PO, itemized invoice and verified payment details?"
+  },
+  "34ad3c0859f50a1db209019f32432b0b05f2b64d23ffb07829943f23eac70a16": {
+    "vendor": "",
+    "invoice_number": "",
+    "amount": null,
+    "due_date": "",
+    "confidence": 7,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Very low extraction confidence: vendor, invoice number, amount, currency and due date are contradictory or unreadable.",
+      "Urgency, an unsupported CEO approval claim and requests to bypass trusted contacts are suspicious.",
+      "The sender requests banking credentials and a one-time security code.",
+      "An unfamiliar beneficiary and missing purchase order require independent review."
+    ],
+    "missing_information": [
+      "Verified legal vendor identity",
+      "Readable invoice number",
+      "Confirmed total and currency",
+      "Exact due date",
+      "Approved purchase order",
+      "Itemized services and verified payment instructions"
+    ],
+    "human_question": "Can AP verify whether any legitimate invoice exists through trusted internal records and a known vendor contact? Do not share banking credentials or security codes."
+  }
+}

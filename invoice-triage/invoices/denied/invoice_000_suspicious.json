@@ -1,0 +1,25 @@
+{
+  "vendor": "",
+  "invoice_number": "",
+  "amount": null,
+  "due_date": "",
+  "confidence": 7,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Very low extraction confidence: vendor, invoice number, amount, currency and due date are contradictory or unreadable.",
+    "Urgency, an unsupported CEO approval claim and requests to bypass trusted contacts are suspicious.",
+    "The sender requests banking credentials and a one-time security code.",
+    "An unfamiliar beneficiary and missing purchase order require independent review."
+  ],
+  "missing_information": [
+    "Verified legal vendor identity",
+    "Readable invoice number",
+    "Confirmed total and currency",
+    "Exact due date",
+    "Approved purchase order",
+    "Itemized services and verified payment instructions"
+  ],
+  "human_question": "Can AP verify whether any legitimate invoice exists through trusted internal records and a known vendor contact? Do not share banking credentials or security codes.",
+  "_mode": "Mock demo",
+  "_text_hash": "34ad3c0859f50a1db209019f32432b0b05f2b64d23ffb07829943f23eac70a16"
+}

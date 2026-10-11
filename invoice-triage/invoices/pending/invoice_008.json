@@ -1,0 +1,18 @@
+{
+  "vendor": "Summit Equipment Rentals",
+  "invoice_number": "SER-6012",
+  "amount": 1314,
+  "due_date": "2026-10-29",
+  "confidence": 96,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Printed total is USD 1,314, but listed charges total USD 1,134.",
+    "The USD 180 difference has no supporting line item."
+  ],
+  "missing_information": [
+    "Corrected invoice total or explanation of additional charges"
+  ],
+  "human_question": "Can the vendor provide a corrected invoice or explain the USD 180 discrepancy?",
+  "_mode": "Mock demo",
+  "_text_hash": "30382a311ae2d673c9555496c25959501ae1222c38cb4da480acbccc9a69d744"
+}

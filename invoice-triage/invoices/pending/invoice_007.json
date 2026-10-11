@@ -1,0 +1,18 @@
+{
+  "vendor": "PixelPress Studio LLC",
+  "invoice_number": "PP-2209",
+  "amount": 1800,
+  "due_date": "2026-10-16",
+  "confidence": 95,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "The email claims this invoice was already paid, creating a possible duplicate-payment concern.",
+    "Payment history has not been independently verified."
+  ],
+  "missing_information": [
+    "Verified payment status and payment reference"
+  ],
+  "human_question": "Does the October 2 payment settle PP-2209, or is there an outstanding balance?",
+  "_mode": "Mock demo",
+  "_text_hash": "39c3a67edfdbdd99cbf0f5995a304ec86522555fb4fe508c3e6e1b4062ab1466"
+}
