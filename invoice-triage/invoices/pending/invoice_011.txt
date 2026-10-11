@@ -1,0 +1,8 @@
+Source: Structured billing email
+Vendor: Harbor Water Delivery
+Invoice number: HW-7110
+Amount: USD 108.00
+Due date: 2026-11-12
+Purchase order: PO-2026-0411
+Email / invoice text: Six water deliveries x USD 18 = USD 108.00. Tax USD 0.00. Total USD 108.00. Due date stated explicitly. Existing check payment address unchanged.
+All names and payment references are fictional demo data.

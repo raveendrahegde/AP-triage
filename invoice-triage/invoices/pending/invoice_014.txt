@@ -1,0 +1,8 @@
+Source: Recurring email
+Vendor: Maple Office Cleaning
+Invoice number: MOC-1044
+Amount: USD 950.00
+Due date: 2026-11-15
+Purchase order: PO-2026-0120
+Email / invoice text: October cleaning, 10 visits x USD 95 = USD 950.00. No tax. Same monthly price as September. ACH account on file unchanged.
+All names and payment references are fictional demo data.

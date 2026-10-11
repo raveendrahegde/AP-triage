@@ -1,0 +1,17 @@
+{
+  "vendor": "Fern Print Shop",
+  "invoice_number": "FPS-509",
+  "amount": 432,
+  "due_date": "2026-11-08",
+  "confidence": 93,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Printed total does not match the USD 421.20 sum of listed charges."
+  ],
+  "missing_information": [
+    "Corrected total or explanation of USD 10.80 difference"
+  ],
+  "human_question": "Can the vendor reconcile the printed total with its itemized charges?",
+  "_mode": "Mock demo",
+  "_text_hash": "65604e5624aaa695e28650fe72ec30151e684cbb6d8150c18a857a555d7052e9"
+}

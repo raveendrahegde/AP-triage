@@ -1,0 +1,8 @@
+Source: Payment reminder email
+Vendor: WestBridge Couriers
+Invoice number: WBC-3901
+Amount: USD 615.00
+Due date: 2026-10-28
+Purchase order: PO-2026-0755
+Email / invoice text: Deliveries total USD 615.00. Accounts receivable requests immediate payment. Internal forwarded note: WBC-3901 may have been paid October 6, reference not confirmed. Existing ACH unchanged.
+All names and payment references are fictional demo data.

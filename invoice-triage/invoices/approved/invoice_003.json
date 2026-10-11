@@ -15,5 +15,11 @@
   ],
   "human_question": "Can you verify the bank change through a trusted vendor contact already on file?",
   "_mode": "Mock demo",
-  "_text_hash": "52705a99f7baef44df38337ae01ef652f366b1be9cd61ecd89c0ceba24c5dc47"
+  "_text_hash": "52705a99f7baef44df38337ae01ef652f366b1be9cd61ecd89c0ceba24c5dc47",
+  "_decision": {
+    "by": "Ravee",
+    "status": "approved",
+    "reason": "",
+    "at": "2026-10-11T02:18:35.691685+00:00"
+  }
 }

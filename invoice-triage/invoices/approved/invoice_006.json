@@ -12,5 +12,11 @@
   "missing_information": [],
   "human_question": "Can you confirm the service period and match the invoice to the PO?",
   "_mode": "Mock demo",
-  "_text_hash": "f9ce9b7c59e57af9750b6343fd5235c9e20d4a8c7822a6e56f3e78133efa5db4"
+  "_text_hash": "f9ce9b7c59e57af9750b6343fd5235c9e20d4a8c7822a6e56f3e78133efa5db4",
+  "_decision": {
+    "by": "Ravee",
+    "status": "approved",
+    "reason": "",
+    "at": "2026-10-11T02:41:06.004201+00:00"
+  }
 }

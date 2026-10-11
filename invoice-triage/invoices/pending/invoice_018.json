@@ -1,0 +1,20 @@
+{
+  "vendor": "Aster Research Partners",
+  "invoice_number": "ARP-220",
+  "amount": 28500,
+  "due_date": "2026-11-20",
+  "confidence": 82,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Total exceeds the demo review threshold and stated usual retainer.",
+    "Scope lacks supporting detail."
+  ],
+  "missing_information": [
+    "Itemized scope",
+    "Authorized revised total",
+    "Delivery acceptance"
+  ],
+  "human_question": "Who can verify the scope and authorize this increase from the usual retainer?",
+  "_mode": "Mock demo",
+  "_text_hash": "77abba5caa116bf3f8cca68a7214486ec65e8e4738dc4d341024f8051373ab6f"
+}

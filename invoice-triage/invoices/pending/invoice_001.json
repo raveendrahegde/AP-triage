@@ -12,5 +12,14 @@
   "missing_information": [],
   "human_question": "Has the subscription been received and matched to the PO?",
   "_mode": "Mock demo",
-  "_text_hash": "7ec1c5cee7928a9ce4e18cfc6bcae0d91998149a202c172254a882536aa069dc"
+  "_text_hash": "7ec1c5cee7928a9ce4e18cfc6bcae0d91998149a202c172254a882536aa069dc",
+  "_history": [
+    {
+      "action": "reverted",
+      "by": "Ravee",
+      "at": "2026-10-11T02:16:57.424222+00:00",
+      "previous_status": "approved",
+      "previous_decision": null
+    }
+  ]
 }

@@ -19,5 +19,11 @@
   ],
   "human_question": "Can Chris identify the vendor and provide the approved PO, itemized invoice and verified payment details?",
   "_mode": "Mock demo",
-  "_text_hash": "6f1edab612a013299bb0d4d1a7df936378f5d1d37b319c531522862f041df399"
+  "_text_hash": "6f1edab612a013299bb0d4d1a7df936378f5d1d37b319c531522862f041df399",
+  "_decision": {
+    "by": "Ravee",
+    "status": "approved",
+    "reason": "",
+    "at": "2026-10-11T02:41:11.375604+00:00"
+  }
 }

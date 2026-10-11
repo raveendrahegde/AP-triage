@@ -1,0 +1,15 @@
+{
+  "vendor": "OakLeaf Hosting",
+  "invoice_number": "OL-2026-1010",
+  "amount": 360,
+  "due_date": "2026-11-10",
+  "confidence": 100,
+  "recommendation": "NORMAL",
+  "reasons": [
+    "All extraction fields are explicit and consistent in this demo sample."
+  ],
+  "missing_information": [],
+  "human_question": "Can you confirm the hosting service was received and matched to the PO?",
+  "_mode": "Mock demo",
+  "_text_hash": "e6bb00acde5c5e9ad1458a0df5484e9f0886146264177803e264be0b512c5a8c"
+}

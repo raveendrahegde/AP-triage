@@ -1,0 +1,8 @@
+Source: Forwarded department email
+Vendor: BluePeak Training
+Invoice number: BPT-288
+Amount: USD 2,400.00
+Due date: 2026-11-18
+Purchase order: [not supplied]
+Email / invoice text: Workshop: eight attendees x USD 300 = USD 2,400.00. Vendor says organizer will send PO later. Pay by check to address on file.
+All names and payment references are fictional demo data.

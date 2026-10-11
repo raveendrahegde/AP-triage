@@ -1,0 +1,8 @@
+Source: Vendor portal
+Vendor: OakLeaf Hosting
+Invoice number: OL-2026-1010
+Amount: USD 360.00
+Due date: 2026-11-10
+Purchase order: PO-2026-0300
+Email / invoice text: October hosting: 12 instances x USD 30 = USD 360.00. Tax USD 0.00. Total USD 360.00. Unchanged ACH account ending 8012. Prior month USD 360.00.
+All names and payment references are fictional demo data.

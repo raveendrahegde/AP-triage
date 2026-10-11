@@ -1,0 +1,15 @@
+{
+  "vendor": "Harbor Water Delivery",
+  "invoice_number": "HW-7110",
+  "amount": 108,
+  "due_date": "2026-11-12",
+  "confidence": 100,
+  "recommendation": "NORMAL",
+  "reasons": [
+    "Vendor, invoice number, PO, total and due date are clearly stated."
+  ],
+  "missing_information": [],
+  "human_question": "Do the six deliveries match the receiving log?",
+  "_mode": "Mock demo",
+  "_text_hash": "057ed80cbfdf6ef2fe842fddcfe611be2c8227f0748104818cd0eccbf3a9b3d3"
+}

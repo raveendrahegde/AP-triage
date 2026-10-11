@@ -1,0 +1,17 @@
+{
+  "vendor": "WestBridge Couriers",
+  "invoice_number": "WBC-3901",
+  "amount": 615,
+  "due_date": "2026-10-28",
+  "confidence": 95,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Internal note suggests possible prior payment; duplicate status is unverified."
+  ],
+  "missing_information": [
+    "Confirmed payment history"
+  ],
+  "human_question": "Was WBC-3901 already paid on October 6?",
+  "_mode": "Mock demo",
+  "_text_hash": "297a0abb275b55ff81efa60256dbf907b06aa114af406ba272089c1af32a1561"
+}

@@ -1,0 +1,18 @@
+{
+  "vendor": "BluePeak Training",
+  "invoice_number": "BPT-288",
+  "amount": 2400,
+  "due_date": "2026-11-18",
+  "confidence": 91,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "PO is missing and order authorization is not established."
+  ],
+  "missing_information": [
+    "Approved purchase order",
+    "Workshop attendance confirmation"
+  ],
+  "human_question": "Who authorized the workshop and which PO covers it?",
+  "_mode": "Mock demo",
+  "_text_hash": "604daa3b1ebb31623f2cb5558190ca5deee24736d7b5fb20a88a31153124994d"
+}

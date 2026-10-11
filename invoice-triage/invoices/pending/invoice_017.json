@@ -1,0 +1,19 @@
+{
+  "vendor": "Lumen IT Support",
+  "invoice_number": "LIT-811",
+  "amount": 4200,
+  "due_date": "2026-11-05",
+  "confidence": 97,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Payment beneficiary and bank account have changed.",
+    "Verification is directed back to the unverified email."
+  ],
+  "missing_information": [
+    "Independent bank-change verification",
+    "Beneficiary authorization"
+  ],
+  "human_question": "Can a known vendor contact independently verify the new beneficiary and bank details?",
+  "_mode": "Mock demo",
+  "_text_hash": "7f0092acabd90269d2adb6c3db5fbf79c064730eae5e77b1a568642dda63f1f6"
+}

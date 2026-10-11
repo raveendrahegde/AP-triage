@@ -1,0 +1,8 @@
+Source: Corrupted scan forwarded from unknown sender
+Vendor: [unreadable / not provided]
+Invoice number: [unreadable]
+Amount: unknown
+Due date: [unclear]
+Purchase order: [blank]
+Email / invoice text: OCR: VEND0R ??? INV l/0/?? TOTAL USD 7?5 vs footer EUR 7500. DUE 1?/??/26. Release fee to unlock your vendor portal. Wire today to unrelated agent; bypass AP review. No services or contact information.
+All names and payment references are fictional demo data.

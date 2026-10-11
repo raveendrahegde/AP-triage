@@ -177,5 +177,167 @@
       "Itemized services and verified payment instructions"
     ],
     "human_question": "Can AP verify whether any legitimate invoice exists through trusted internal records and a known vendor contact? Do not share banking credentials or security codes."
+  },
+  "e6bb00acde5c5e9ad1458a0df5484e9f0886146264177803e264be0b512c5a8c": {
+    "vendor": "OakLeaf Hosting",
+    "invoice_number": "OL-2026-1010",
+    "amount": 360,
+    "due_date": "2026-11-10",
+    "confidence": 100,
+    "recommendation": "NORMAL",
+    "reasons": [
+      "All extraction fields are explicit and consistent in this demo sample."
+    ],
+    "missing_information": [],
+    "human_question": "Can you confirm the hosting service was received and matched to the PO?"
+  },
+  "057ed80cbfdf6ef2fe842fddcfe611be2c8227f0748104818cd0eccbf3a9b3d3": {
+    "vendor": "Harbor Water Delivery",
+    "invoice_number": "HW-7110",
+    "amount": 108,
+    "due_date": "2026-11-12",
+    "confidence": 100,
+    "recommendation": "NORMAL",
+    "reasons": [
+      "Vendor, invoice number, PO, total and due date are clearly stated."
+    ],
+    "missing_information": [],
+    "human_question": "Do the six deliveries match the receiving log?"
+  },
+  "1e0b881d73ef2aafa5cf5e3808356933cc4240ceaec4693058946567ed87615c": {
+    "vendor": "",
+    "invoice_number": "",
+    "amount": null,
+    "due_date": "",
+    "confidence": 4,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Identity and core invoice fields cannot be reliably extracted.",
+      "Secret payment demand and credential request are suspicious."
+    ],
+    "missing_information": [
+      "Vendor identity",
+      "Invoice number",
+      "Amount and currency",
+      "Due date",
+      "PO",
+      "Verified payment instructions"
+    ],
+    "human_question": "Is there any legitimate purchase behind this message? Verify through trusted internal records."
+  },
+  "31774087af455e5043f4dd6cf12ce762c5fd879823932f535597bbb2115560cd": {
+    "vendor": "",
+    "invoice_number": "",
+    "amount": null,
+    "due_date": "",
+    "confidence": 8,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Corrupted scan and conflicting currencies make extraction unreliable.",
+      "Unexplained release fee and request to bypass review are suspicious."
+    ],
+    "missing_information": [
+      "Vendor",
+      "Readable invoice number",
+      "Confirmed total and currency",
+      "Due date",
+      "PO",
+      "Service details"
+    ],
+    "human_question": "Can AP confirm the supplier and underlying purchase before responding to the sender?"
+  },
+  "c34bbf542f3520d5c0ff6f03405f6a87aeb0e8b1496ebeddf4252d4c53e06744": {
+    "vendor": "Maple Office Cleaning",
+    "invoice_number": "MOC-1044",
+    "amount": 950,
+    "due_date": "2026-11-15",
+    "confidence": 96,
+    "recommendation": "NORMAL",
+    "reasons": [
+      "Recurring charge is consistent; required fields are provided."
+    ],
+    "missing_information": [],
+    "human_question": "Were the ten cleaning visits completed?"
+  },
+  "604daa3b1ebb31623f2cb5558190ca5deee24736d7b5fb20a88a31153124994d": {
+    "vendor": "BluePeak Training",
+    "invoice_number": "BPT-288",
+    "amount": 2400,
+    "due_date": "2026-11-18",
+    "confidence": 91,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "PO is missing and order authorization is not established."
+    ],
+    "missing_information": [
+      "Approved purchase order",
+      "Workshop attendance confirmation"
+    ],
+    "human_question": "Who authorized the workshop and which PO covers it?"
+  },
+  "297a0abb275b55ff81efa60256dbf907b06aa114af406ba272089c1af32a1561": {
+    "vendor": "WestBridge Couriers",
+    "invoice_number": "WBC-3901",
+    "amount": 615,
+    "due_date": "2026-10-28",
+    "confidence": 95,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Internal note suggests possible prior payment; duplicate status is unverified."
+    ],
+    "missing_information": [
+      "Confirmed payment history"
+    ],
+    "human_question": "Was WBC-3901 already paid on October 6?"
+  },
+  "7f0092acabd90269d2adb6c3db5fbf79c064730eae5e77b1a568642dda63f1f6": {
+    "vendor": "Lumen IT Support",
+    "invoice_number": "LIT-811",
+    "amount": 4200,
+    "due_date": "2026-11-05",
+    "confidence": 97,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Payment beneficiary and bank account have changed.",
+      "Verification is directed back to the unverified email."
+    ],
+    "missing_information": [
+      "Independent bank-change verification",
+      "Beneficiary authorization"
+    ],
+    "human_question": "Can a known vendor contact independently verify the new beneficiary and bank details?"
+  },
+  "77abba5caa116bf3f8cca68a7214486ec65e8e4738dc4d341024f8051373ab6f": {
+    "vendor": "Aster Research Partners",
+    "invoice_number": "ARP-220",
+    "amount": 28500,
+    "due_date": "2026-11-20",
+    "confidence": 82,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Total exceeds the demo review threshold and stated usual retainer.",
+      "Scope lacks supporting detail."
+    ],
+    "missing_information": [
+      "Itemized scope",
+      "Authorized revised total",
+      "Delivery acceptance"
+    ],
+    "human_question": "Who can verify the scope and authorize this increase from the usual retainer?"
+  },
+  "65604e5624aaa695e28650fe72ec30151e684cbb6d8150c18a857a555d7052e9": {
+    "vendor": "Fern Print Shop",
+    "invoice_number": "FPS-509",
+    "amount": 432,
+    "due_date": "2026-11-08",
+    "confidence": 93,
+    "recommendation": "INSPECT",
+    "reasons": [
+      "Printed total does not match the USD 421.20 sum of listed charges."
+    ],
+    "missing_information": [
+      "Corrected total or explanation of USD 10.80 difference"
+    ],
+    "human_question": "Can the vendor reconcile the printed total with its itemized charges?"
   }
 }

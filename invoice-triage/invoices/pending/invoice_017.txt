@@ -1,0 +1,8 @@
+Source: Vendor bank-change email
+Vendor: Lumen IT Support
+Invoice number: LIT-811
+Amount: USD 4,200.00
+Due date: 2026-11-05
+Purchase order: PO-2026-1005
+Email / invoice text: Support hours: 28 x USD 150 = USD 4,200.00. New ACH beneficiary Lumen Collections Partners, different from vendor. Ignore old account and verify only via this email.
+All names and payment references are fictional demo data.

@@ -16,7 +16,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-No API key is needed: the ten included invoices have realistic cached mock
+No API key is needed: the twenty included invoices have realistic cached mock
 assessments, clearly labeled in the dashboard. New or edited text without a key
 requires manual inspection rather than invented extraction.
 
@@ -31,8 +31,9 @@ failed call, remove that invoice's JSON sidecar and rerun the app.
 
 ## Demo
 
-1. The full sample set has two routine invoices marked NORMAL and eight marked
-   INSPECT. The suspicious unsolicited email sorts first in Pending and has 7%
+1. The full sample set has five routine invoices marked NORMAL and fifteen marked
+   INSPECT. Two samples have 100% mock confidence; two have 4% and 8%.
+   The suspicious unsolicited email sorts first in Pending and has 7%
    mock confidence because its key invoice fields cannot be reliably extracted.
 2. Inspect the bank change or forwarded email to see raw text, reasons, missing
    information, and the question for a human.
@@ -42,6 +43,9 @@ failed call, remove that invoice's JSON sidecar and rerun the app.
    Decisions save reviewer Ravee in the sidecar, and archive tables show the
    reviewer plus denial reasons. Earlier demo decisions display Ravee with no
    invented denial reason.
+   Approved and Denied tabs include a Revert button for each invoice. Revert
+   moves both files back to Pending, clears the active decision, and preserves
+   the previous decision in the sidecar's local history.
 4. Add other `.txt` invoices to `invoices/pending/`. An optional `Source:` line
    supplies the source label. This prototype expects USD amounts.
 
@@ -51,6 +55,7 @@ Cache hashes invalidate assessments when the text changes. The app does not
 check external payment history or vendor records; duplicate concerns come from
 the supplied text. Use one local app session for the demo.
 
-The top profile menu uses a picture placeholder and the name Raveendra hegde.
+The top profile menu uses a picture placeholder, the name Raveendra Hegde,
+and Role: AP Specialist. Human decisions are still attributed to Ravee.
 It starts signed in for the demo; Log out shows a mock login screen. This is a
 UI demo, not authentication or access control.

@@ -104,10 +104,12 @@ def cached_triage(path):
     sidecar = path.with_suffix(".json")
     live = bool(os.getenv("OPENAI_API_KEY", "").strip())
     decision = None
+    history = None
     try:
         result = json.loads(sidecar.read_text())
         if isinstance(result, dict):
             decision = result.get("_decision")
+            history = result.get("_history")
         # Reassess edited text and upgrade demo caches when a key is added.
         if (result.get("_text_hash") == digest and valid_result(result)
                 and not (live and result.get("_mode") == "Mock demo")):
@@ -117,6 +119,8 @@ def cached_triage(path):
     result = {**triage_invoice(text), "_text_hash": digest}
     if decision:
         result["_decision"] = decision
+    if history:
+        result["_history"] = history
     temporary = sidecar.with_suffix(".json.tmp")
     temporary.write_text(json.dumps(result, indent=2), encoding="utf-8")
     temporary.replace(sidecar)

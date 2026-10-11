@@ -15,16 +15,18 @@ st.set_page_config(page_title="InvoiceRadar", page_icon="📡", layout="wide")
 st.markdown("""
 <style>
 .block-container { max-width: 1200px; padding-top: 4.5rem; }
-.radar-hero { padding: 1.8rem 2rem; border-radius: 24px; overflow: hidden; margin-bottom: 1.2rem;
-    background: linear-gradient(120deg, #172554, #4338ca 65%, #0e7490); color: white; }
-.profile-avatar { width: 42px; height: 42px; border-radius: 50%; background: #e0e7ff;
-    color: #4338ca; display: flex; align-items: center; justify-content: center;
-    font-weight: 800; border: 2px solid #a5b4fc; }
-.radar-hero h1 { color: white; margin: 0; padding: 0; font-size: 2.8rem; }
-.radar-hero p { margin: .65rem 0 0; color: #e0e7ff; }
-.radar-eyebrow { color: #a5f3fc; font-size: .75rem; letter-spacing: .16em; font-weight: 700; }
-.confidence-panel { padding: .8rem 1rem; border: 1px solid #c7d2fe;
-    border-radius: 14px; background: #f8faff; color: #172554; }
+.st-key-radar-header { padding: 1.8rem 2rem; border-radius: 24px; margin-bottom: .6rem;
+    background: linear-gradient(115deg, #dce6c8, #cadbb5 60%, #e9dfaa);
+    border: 1px solid #d3d9c6; }
+.profile-avatar { width: 42px; height: 42px; border-radius: 50%; background: #faf8ee;
+    color: #36543c; display: flex; align-items: center; justify-content: center;
+    font-weight: 800; border: 2px solid #a8bc8f; }
+.radar-hero h1 { color: #293d30; margin: 0; padding: 0; font-size: clamp(2rem, 4vw, 2.8rem); }
+.radar-hero p { margin: .65rem 0 0; color: #4d624c; }
+.radar-eyebrow { color: #516943; font-size: .75rem; letter-spacing: .16em; font-weight: 700; }
+.confidence-panel { padding: .8rem 1rem; border: 1px solid #d3d9c6;
+    border-radius: 14px; background: #fcfbf5; color: #293d30; }
+@media (max-width: 640px) { .st-key-radar-header { padding: 1.2rem; } }
 .confidence-heading { display: flex; justify-content: space-between;
     align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .65rem; }
 .confidence-status { font-size: .75rem; font-weight: 800; padding: .2rem .55rem;
@@ -38,10 +40,10 @@ st.markdown("""
 .confidence-scale { display: flex; justify-content: space-between;
     font-size: .7rem; color: #475569; margin-top: .35rem; }
 .confidence-note { font-size: .72rem; color: #475569; margin-top: .4rem; }
-[data-testid="stMetric"] { border: 1px solid #c7d2fe; border-radius: 14px; padding: 1rem; }
+[data-testid="stMetric"] { border: 1px solid #d3d9c6; border-radius: 14px; padding: 1rem; }
 [data-testid="stButton"] button { cursor: pointer; transition: background .15s, box-shadow .15s; }
-[data-testid="stButton"] button:hover { box-shadow: 0 0 0 3px #818cf855; }
-[data-testid="stButton"] button:focus-visible { outline: 3px solid #818cf8; outline-offset: 3px; }
+[data-testid="stButton"] button:hover { box-shadow: 0 0 0 3px #8fa77455; }
+[data-testid="stButton"] button:focus-visible { outline: 3px solid #66834e; outline-offset: 3px; }
 [class*="st-key-deny-action-"] button { background: #fff1f2; color: #9f1239; border: 1px solid #fda4af; }
 [class*="st-key-deny-action-"] button:hover,
 [class*="st-key-deny-action-"] button:focus-visible { background: #be123c; color: white;
@@ -100,10 +102,18 @@ def decide(path, status, reason=""):
             cached_triage(path)
         original = sidecar.read_text(encoding="utf-8")
         assessment = json.loads(original)
-        assessment["_decision"] = {
-            "by": "Ravee", "status": status, "reason": reason.strip(),
-            "at": datetime.now(timezone.utc).isoformat(),
-        }
+        if status == "pending":
+            previous = assessment.pop("_decision", None)
+            assessment.setdefault("_history", []).append({
+                "action": "reverted", "by": "Ravee",
+                "at": datetime.now(timezone.utc).isoformat(),
+                "previous_status": path.parent.name, "previous_decision": previous,
+            })
+        else:
+            assessment["_decision"] = {
+                "by": "Ravee", "status": status, "reason": reason.strip(),
+                "at": datetime.now(timezone.utc).isoformat(),
+            }
         temporary = sidecar.with_suffix(".json.tmp")
         temporary.write_text(json.dumps(assessment, indent=2), encoding="utf-8")
         temporary.replace(sidecar)
@@ -148,37 +158,42 @@ def denial_popup(path):
         decide(path, "denied", reason)
 
 
-if not st.session_state.get("mock_logged_in", True):
-    st.title("📡 Welcome to InvoiceRadar")
-    st.caption("Mock login for the hackathon demo")
-    st.write("Continue with the demo profile **Raveendra hegde**.")
-    if st.button("Log in as Raveendra hegde", key="mock-login", type="primary"):
-        st.session_state["mock_logged_in"] = True
-        st.rerun()
-    st.stop()
-
-brand, avatar, profile = st.columns([6, .6, 2.4], vertical_alignment="center")
-# brand.caption("INVOICERADAR / DEMO WORKSPACE")
-avatar.markdown('<div class="profile-avatar" role="img" aria-label="Profile picture placeholder: RH">RH</div>',
-                unsafe_allow_html=True)
-with profile:
-    with st.popover("Raveendra hegde", width="stretch"):
-        st.write("**Raveendra hegde**")
-        st.caption("Accounts payable · Mock login")
-        st.write("Decision name: **Ravee**")
-        if st.button("Log out", key="mock-logout"):
-            st.session_state["mock_logged_in"] = False
-            st.session_state.pop("inspecting", None)
-            close_denial()
-            st.rerun()
-
-st.markdown("""
+logged_in = st.session_state.get("mock_logged_in", True)
+with st.container(key="radar-header"):
+    brand, account = st.columns([3, 1.4], vertical_alignment="top")
+    with brand:
+        st.markdown("""
 <div class="radar-hero">
   <div class="radar-eyebrow">YOUR ACCOUNTS PAYABLE CONTROL ROOM</div>
   <h1>📡 InvoiceRadar</h1>
-  <p>AI Spots the signals in messy invoices. Keep every decision in human hands.</p>
+  <p>Spot the signals in messy invoices. Keep every decision in human hands.</p>
 </div>
 """, unsafe_allow_html=True)
+    with account:
+        avatar, menu = st.columns([1, 4], vertical_alignment="center")
+        avatar.markdown('<div class="profile-avatar" role="img" aria-label="Profile picture placeholder: RH">RH</div>',
+                        unsafe_allow_html=True)
+        with menu:
+            with st.popover("Raveendra Hegde" if logged_in else "Demo login", width="stretch"):
+                st.write("**Raveendra Hegde**")
+                st.caption("Mock profile")
+                st.write("Role: **AP Specialist**")
+                if logged_in:
+                    if st.button("Log out", key="mock-logout"):
+                        st.session_state["mock_logged_in"] = False
+                        st.session_state.pop("inspecting", None)
+                        close_denial()
+                        st.rerun()
+                else:
+                    if st.button("Log in as Raveendra Hegde", key="mock-login", type="primary"):
+                        st.session_state["mock_logged_in"] = True
+                        st.rerun()
+        st.caption("AP Specialist · Demo workspace" if logged_in else "Sign in to the demo workspace")
+
+if not logged_in:
+    st.info("Open Demo login in the header to continue as Raveendra Hegde.")
+    st.stop()
+
 st.info("Higher confidence means clearer signals — not a payment recommendation.")
 # st.caption("Local text-file prototype • USD demo invoices • no database")
 if notice := st.session_state.pop("notice", None):
@@ -249,6 +264,7 @@ for tab, status in ((approved, "approved"), (denied, "denied")):
         if not files[status]:
             st.caption(f"No {status} invoices yet.")
         rows = []
+        archive_entries = []
         for path in files[status]:
             try:
                 result = cached_triage(path)
@@ -261,10 +277,18 @@ for tab, status in ((approved, "approved"), (denied, "denied")):
                 if status == "denied":
                     row["Denial reason"] = decision.get("reason") or "Not recorded"
                 rows.append(row)
+                archive_entries.append((path, result))
             except (OSError, ValueError) as error:
                 st.error(f"Could not read {path.name}: {error}")
         if rows:
             st.dataframe(rows, width="stretch", hide_index=True)
+            st.caption("Return an invoice to Pending for another review.")
+            for path, result in archive_entries:
+                label, action = st.columns([5, 1])
+                label.write(f"**{result['vendor'] or 'Unknown vendor'}** · {result['invoice_number'] or path.name}")
+                if action.button("Revert", key=f"revert-{status}-{path.name}",
+                                 help="Move this invoice and its cached assessment back to Pending."):
+                    decide(path, "pending")
 
 if denying := st.session_state.get("denying"):
     path = ROOT / "pending" / Path(denying).name

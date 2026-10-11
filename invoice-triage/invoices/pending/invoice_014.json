@@ -1,0 +1,15 @@
+{
+  "vendor": "Maple Office Cleaning",
+  "invoice_number": "MOC-1044",
+  "amount": 950,
+  "due_date": "2026-11-15",
+  "confidence": 96,
+  "recommendation": "NORMAL",
+  "reasons": [
+    "Recurring charge is consistent; required fields are provided."
+  ],
+  "missing_information": [],
+  "human_question": "Were the ten cleaning visits completed?",
+  "_mode": "Mock demo",
+  "_text_hash": "c34bbf542f3520d5c0ff6f03405f6a87aeb0e8b1496ebeddf4252d4c53e06744"
+}

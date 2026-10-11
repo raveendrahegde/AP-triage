@@ -1,0 +1,23 @@
+{
+  "vendor": "",
+  "invoice_number": "",
+  "amount": null,
+  "due_date": "",
+  "confidence": 8,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Corrupted scan and conflicting currencies make extraction unreliable.",
+    "Unexplained release fee and request to bypass review are suspicious."
+  ],
+  "missing_information": [
+    "Vendor",
+    "Readable invoice number",
+    "Confirmed total and currency",
+    "Due date",
+    "PO",
+    "Service details"
+  ],
+  "human_question": "Can AP confirm the supplier and underlying purchase before responding to the sender?",
+  "_mode": "Mock demo",
+  "_text_hash": "31774087af455e5043f4dd6cf12ce762c5fd879823932f535597bbb2115560cd"
+}

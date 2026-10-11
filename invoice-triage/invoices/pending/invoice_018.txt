@@ -1,0 +1,8 @@
+Source: Scanned consulting invoice
+Vendor: Aster Research Partners
+Invoice number: ARP-220
+Amount: USD 28,500.00
+Due date: 2026-11-20
+Purchase order: PO-2026-0622
+Email / invoice text: Total USD 28,500.00. Description: special research adjustments; no hours or deliverables attached. Prior retainer USD 3,000.00. Existing ACH unchanged.
+All names and payment references are fictional demo data.

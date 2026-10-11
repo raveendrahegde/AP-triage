@@ -1,0 +1,29 @@
+{
+  "vendor": "",
+  "invoice_number": "",
+  "amount": null,
+  "due_date": "",
+  "confidence": 4,
+  "recommendation": "INSPECT",
+  "reasons": [
+    "Identity and core invoice fields cannot be reliably extracted.",
+    "Secret payment demand and credential request are suspicious."
+  ],
+  "missing_information": [
+    "Vendor identity",
+    "Invoice number",
+    "Amount and currency",
+    "Due date",
+    "PO",
+    "Verified payment instructions"
+  ],
+  "human_question": "Is there any legitimate purchase behind this message? Verify through trusted internal records.",
+  "_mode": "Mock demo",
+  "_text_hash": "1e0b881d73ef2aafa5cf5e3808356933cc4240ceaec4693058946567ed87615c",
+  "_decision": {
+    "by": "Ravee",
+    "status": "denied",
+    "reason": "Susp",
+    "at": "2026-10-11T02:37:48.844759+00:00"
+  }
+}
